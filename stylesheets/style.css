@@ -38,6 +38,12 @@ body {
   padding: 8px 16px;
   text-align: center; }
 
+a {
+  text-decoration: none; }
+  a:hover {
+    opacity: 0.5;
+    cursor: pointer; }
+
 .button-logo {
   margin: 0 16px;
   border: 3px solid transparent;
@@ -139,7 +145,11 @@ body {
 .product-item-card {
   border-radius: 4px;
   background: #2c303a;
-  transition: .2s; }
+  transition: 0.2s; }
+  .product-item-card:hover {
+    transform: scale(1.05, 1.05);
+    opacity: 0.4;
+    cursor: pointer; }
 
 .product-item-card-image {
   width: 350px;
@@ -241,6 +251,16 @@ body {
 
 .cursor {
   animation: blink 1s infinite; }
+
+@keyframes blink {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 0; }
+  51% {
+    opacity: 1; }
+  100% {
+    opacity: 1; } }
 
 .footer {
   justify-content: space-between;
