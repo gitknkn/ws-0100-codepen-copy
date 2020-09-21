@@ -90,10 +90,6 @@ body {
 
 .features-card {
   margin: 2rem 1rem; }
-  @media (max-width: 576px) {
-    .features-card {
-      width: 100%;
-      float: none; } }
 
 .card-icon {
   background: black;
@@ -131,15 +127,14 @@ body {
 
 .product-item-row {
   justify-content: center; }
+  @media (max-width: 576px) {
+    .product-item-row {
+      flex-wrap: wrap; } }
 
 .product-item {
   background: #2c303a;
   margin: 2rem 1rem;
   width: 360px; }
-  @media (max-width: 576px) {
-    .product-item {
-      width: 100%;
-      float: none; } }
 
 .product-item-card {
   border-radius: 4px;
@@ -154,7 +149,7 @@ body {
   .product-item-card-image img {
     border-radius: 4px;
     object-fit: cover;
-    width: 50%; }
+    width: 100%; }
 
 .product-item-card-body {
   display: flex;
